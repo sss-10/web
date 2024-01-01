@@ -1,0 +1,101 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css">
+  <link rel='stylesheet' href='style.css' />
+  <style>
+    /* Basic styling for images and text */
+    .image-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .image-box {
+        flex: 1 0 calc(33.33% - 10px);
+        margin: 5px;
+        box-sizing: border-box;
+        position: relative;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        border-radius: 8px;
+    }
+
+    .image-text {
+        position: absolute;
+        bottom: 30%;
+        left: 10px;
+        color: white;
+        font-size: 23px;
+        font-weight: bold;
+        text-shadow: 0px 0px 10px #000, 2px 2px 2px #000, -2px 2px 2px #000, 2px -2px 2px #000, -2px -2px 2px #000;
+        text-align: center;
+    }
+
+    /* Media query for mobile devices */
+    @media (max-width: 768px) {
+        .image-box {
+            flex: 1 0 100%;
+        }
+        .image-text{
+            position: sticky;
+        }
+        .image-container{
+            margin: auto;
+            width: 50%;
+        }
+    }
+</style>
+</head>
+
+<body>
+  <div class="header">
+   <div class="menu">
+    <div class="container">
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="business_model.html">Business Model</a></li>
+        <li><a href="#">Resources</a></li>
+        <li><a href="#">Human Capital</a></li>
+        <li><a href="#">Integration Capabilities</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+        <h2 style="font-size: xx-large; color: white; text-align: center; margin-top: 90px;">
+            Our Business Model
+        </h2>
+    </div>
+  </div>
+  <div class="image-container">
+    <div class="image-box">
+        <img src="./img/System_with_Power_Equipment_Integration.jpg">
+        <div class="image-text">System with Power Equipment Integration</div>
+    </div>
+    <div class="image-box">
+        <img src="./img/Telecommunication_site.jpg">
+        <div class="image-text">EPC Contracts & Managed Energy Provider for Telecom Sites</div>
+    </div>
+    <div class="image-box">
+        <img src="./img/Power_storage_solution.jpg">
+        <div class="image-text">Integrator of Power Electronics & Energy Storage Solutions</div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="container">
+      <ul>
+        <li>Thankyou for choosing Excella&#8482;</li>
+      </ul>
+      <p> All rights are reserved.</p>
+    </div>
+  </div>
+
+</body>
+
+</html>
