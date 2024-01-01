@@ -368,4 +368,14 @@ form {
   .col-md-4{
     width: 100%;
   }
+  .image-box {
+     flex: 1 0 100%;
+        }
+        .image-text{
+            position: sticky;
+        }
+        .image-container{
+            margin: auto;
+            width: 50%;
+        }
 }
