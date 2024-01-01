@@ -340,7 +340,7 @@ form {
     margin-top: 0em;
 }
 
-@media screen and (max-width: 1080px) {
+@media only screen and (max-device-width: 480px){
   .row{
     display: flex;
     flex-wrap: wrap;
