@@ -35,8 +35,18 @@
         text-shadow: 0px 0px 10px #000, 2px 2px 2px #000, -2px 2px 2px #000, 2px -2px 2px #000, -2px -2px 2px #000;
         text-align: center;
     }
-
-   
+    @media only screen and (max-device-width: 768px) {
+        .image-box {
+            flex: 1 0 100%;
+        }
+        .image-text{
+            position: sticky;
+        }
+        .image-container{
+            margin: auto;
+            width: 50%;
+        }
+    }
 </style>
 </head>
 
