@@ -1,0 +1,134 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css">
+  <link rel='stylesheet' href='style.css' />
+  <style>
+
+    table {
+        width: 60%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+        overflow: hidden;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: #f5c542;
+    }
+
+    th, td {
+        padding: 15px;
+        text-align: left;
+        border-bottom: 1px solid #fff;
+    }
+
+    th {
+        background-color: #f39c12;
+        color: #fff;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f9e79f;
+    }
+
+    @media only screen and (max-width: 768px) {
+        table, thead, tbody, th, td, tr {
+            display: block;
+        }
+
+        th, td {
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        th {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+    }
+</style>
+</head>
+
+<body>
+  <div class="header">
+   <div class="menu">
+    <div class="container">
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="business_model.html">Business Model</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li  class="active"><a href="human_capital.html">Human Capital</a></li>
+        <li><a href="#">Integration Capabilities</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+        <h2 style="font-size: xx-large; color: white; text-align: center; margin-top: 90px;">
+            Human Capital
+        </h2>
+    </div>
+  </div>
+  <div style="display: flex; justify-content: center;">
+    <table>
+        <thead>
+            <tr>
+                <th>Team</th>
+                <th>Strength</th>
+                <th>Location</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Service</td>
+                <td>29</td>
+                <td>Pan India</td>
+            </tr>
+            <tr>
+                <td>Manufacturing</td>
+                <td>12</td>
+                <td>In Manesar/ Noida</td>
+            </tr>
+            <tr>
+                <td>Design , R&D</td>
+                <td>3</td>
+                <td>Delhi</td>
+            </tr>
+            <tr>
+                <td>Commercial</td>
+                <td>4</td>
+                <td>Delhi/Ghaziabad</td>
+            </tr>
+            <tr>
+                <td>HQ/Control</td>
+                <td>1</td>
+                <td>Delhi/Ghaziabad</td>
+            </tr>
+            <tr>
+                <td>EPC & TSP Services</td>
+                <td>11</td>
+                <td>Pan India, Capable</td>
+            </tr>
+            <tr>
+                <td>O&M Services</td>
+                <td>15</td>
+                <td>Pan India, Capable</td>
+            </tr>
+        </tbody>
+    </table>
+    
+  </div>
+  <div class="footer">
+    <div class="container">
+      <ul>
+        <li>Thankyou for choosing Excella&#8482;</li>
+      </ul>
+      <p> All rights are reserved.</p>
+    </div>
+  </div>
+
+</body>
+
+</html>
