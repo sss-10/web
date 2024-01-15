@@ -3,6 +3,7 @@
 <head>
   <link rel="stylesheet" href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css">
   <link rel='stylesheet' href='style.css' />
+  <script src="script.js" defer></script>
   <style>
     /* Basic styling for images and text */
     .image-container {
@@ -18,7 +19,7 @@
         position: relative;
     }
 
-    img {
+    .image {
         width: 100%;
         height: auto;
         max-width: 100%;
@@ -38,14 +39,18 @@
     @media (max-device-width: 768px) {
         .image-box {
             flex: 1 0 100%;
-            height:25vh;
+            height: 36vh;
         }
         .image-text{
-            position: sticky;
+            position: static;
+            font-size: 34px;
         }
         .image-container{
             margin: auto;
-            width: 50%;
+            width: 70%;
+        }
+        h2{
+          font-size: 60px;
         }
     }
 </style>
@@ -53,8 +58,13 @@
 
 <body>
   <div class="header">
-   <div class="menu">
-    <div class="container">
+    <div class="menu">
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <p class="logo"><b>Excella</b></p>
       <ul class="nav">
         <li><a href="index.html">Home</a></li>
         <li class="active"><a href="business_model.html">Business Model</a></li>
@@ -63,33 +73,33 @@
         <li><a href="integration.html">Integration Capabilities</a></li>
         <li><a href="contact.html">Contact Us</a></li>
       </ul>
-    </div>
+      <a class="cta" href="#"><img src="./icon/file.png" ><button>Broucher</button></a>
   </div>
   <div class="row">
     <div class="col-md-12">
-        <h2 style="font-size: xx-large; color: white; text-align: center; margin-top: 90px;">
+        <h2 style="color: white; text-align: center; margin-top: 90px;">
             Our Business Model
         </h2>
     </div>
   </div>
   <div class="image-container">
     <div class="image-box">
-        <img src="./img/System_with_Power_Equipment_Integration.jpg">
+        <img class="image" src="./img/System_with_Power_Equipment_Integration.jpg">
         <div class="image-text">System with Power Equipment Integration</div>
     </div>
     <div class="image-box">
-        <img src="./img/Telecommunication_site.jpg">
+        <img  class="image"  src="./img/Telecommunication_site.jpg">
         <div class="image-text">EPC Contracts & Managed Energy Provider for Telecom Sites</div>
     </div>
     <div class="image-box">
-        <img src="./img/Power_storage_solution.jpg">
+        <img  class="image" src="./img/Power_storage_solution.jpg">
         <div class="image-text">Integrator of Power Electronics & Energy Storage Solutions</div>
     </div>
   </div>
   </div>
+  
   <div class="footer">
-    
-  <hr style="color: aliceblue; height: 2px;"/>
+    <hr style="color: aliceblue; height: 2px;"/>
     <div class="container">
       <ul>
         <li>Thankyou for choosing Excella&#8482;</li>
