@@ -3,8 +3,11 @@
 <head>
   <link rel="stylesheet" href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css">
   <link rel='stylesheet' href='style.css' />
+  <script src="script.js" defer></script>
   <style>
-
+    h2{
+        font-size: xx-large;
+    }
     table {
         width: 60%;
         border-collapse: collapse;
@@ -30,9 +33,11 @@
         background-color: #f9e79f;
     }
 
-    @media only screen and (max-width: 768px) {
-        table, thead, tbody, th, td, tr {
-            display: block;
+    @media  only screen and (max-device-width: 768px){
+        
+        table{
+            font-size: x-large;
+            width:fit-content;
         }
 
         th, td {
@@ -40,11 +45,11 @@
             width: 100%;
             box-sizing: border-box;
         }
-
-        th {
-            position: absolute;
-            top: -9999px;
-            left: -9999px;
+        th{
+            font-size: 40px;
+        }
+        h2{
+            font-size: 60px;
         }
     }
 </style>
@@ -52,23 +57,27 @@
 
 <body>
   <div class="header">
-   <div class="menu">
-    <div class="container">
-      <ul class="nav">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="business_model.html">Business Model</a></li>
-        <li><a href="resources.html">Resources</a></li>
-        <li class="active"><a href="human_capital.html">Human Capital</a></li>
-        <li><a href="integration.html">Integration Capabilities</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-      </ul>
+    <div class="menu">
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        <p class="logo"><b>Excella</b></p>
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="business_model.html">Business Model</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li class="active"><a href="human_capital.html">Human Capital</a></li>
+          <li><a href="integration.html">Integration Capabilities</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <a class="cta" href="#"><img src="./icon/file.png" ><button>Broucher</button></a>
     </div>
-  </div>
-  </div>
   <div  style="background-color: black;">
     <div class="row">
         <div class="col-md-12">
-            <h2 style="font-size: xx-large; color: white; text-align: center; margin-top: 90px;">
+            <h2 style=" color: white; text-align: center; margin-top: 90px;">
                 Human Capital
             </h2>
         </div>
@@ -123,9 +132,8 @@
         
       </div>
   </div>
-  
+  <hr style="color: aliceblue; height: 2px;"/>
   <div class="footer">
-    <hr style="color: aliceblue; height: 2px;"/>
     <div class="container">
       <ul>
         <li>Thankyou for choosing Excella&#8482;</li>
