@@ -3,7 +3,11 @@
 <head>
   <link rel="stylesheet" href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css">
   <link rel='stylesheet' href='style.css' />
+  <script src="script.js" defer></script>
   <style>
+    .row{
+      padding: 30px;
+    }
     table {
         width: 60%;
         border-collapse: collapse;
@@ -28,13 +32,29 @@
     tr:nth-child(even) {
         background-color: #f9e79f;
     }
+    h2{
+      font-size: xx-large;
+    }
+    @media only screen and (max-device-width: 768px){
+      .row{
+        margin: 80px 0px;
+      }
+      table{
+        width:95%;
+      }
+    }
   </style>
 </head>
 
 <body>
   <div class="header">
-   <div class="menu">
-    <div class="container">
+    <div class="menu">
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <p class="logo"><b>Excella</b></p>
       <ul class="nav">
         <li><a href="index.html">Home</a></li>
         <li><a href="business_model.html">Business Model</a></li>
@@ -43,11 +63,14 @@
         <li class="active"><a href="integration.html">Integration Capabilities</a></li>
         <li><a href="contact.html">Contact Us</a></li>
       </ul>
-    </div>
+      <a class="cta" href="#"><img src="./icon/file.png" ><button>Broucher</button></a>
   </div>
-  <div class="row" style="padding: 30px;">
+  <div class="row">
     <div class="col-md-12" style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
-        <h2 style="color: white;">Combination Battery System</h2>
+        <h2 style="color: white; border-top: 2px solid white;border-left: 2px solid white;border-right: 2px solid white; 
+            padding: 5px 30px; border-top-right-radius: 10px; border-top-left-radius: 10px;">
+          Combination Battery System
+        </h2>
         <img src="./img/cbs.PNG" style="width: 50%; border-radius: 10px;">
     </div>
   </div>
@@ -82,9 +105,8 @@
             <img src="./img/icr.PNG" style="width: 60%; border-radius: 5px;">
     </div>
   </div>
-  
+  <hr style="color: aliceblue; height: 2px;"/>
   <div class="footer">
-    <hr style="color: aliceblue; height: 2px;"/>
     <div class="container">
       <ul>
         <li>Thankyou for choosing Excella&#8482;</li>
